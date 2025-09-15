@@ -1,11 +1,21 @@
 use dioxus::prelude::*;
 
+mod pages;
+
+use pages::HomePage;
+
 #[derive(Debug, Clone, Routable, PartialEq)]
 #[rustfmt::skip]
-enum Route {
+enum Routes {
     #[layout(Navbar)]
         #[route("/")]
-        Home {},
+        HomePage {},
+}
+
+impl Routes {
+    fn home() {
+        Self::HomePage {}
+    }
 }
 
 const FAVICON_ICO: Asset = asset!("assets/favicon.ico");
@@ -42,24 +52,10 @@ fn App() -> Element {
     rsx! {
         document::Link { rel: "icon", href: FAVICON_ICO }
         document::Link { rel: "stylesheet", href: STYLE_CSS }
-        Router::<Route> {}
+        Router::<Routes> {}
     }
 }
 
-#[component]
-pub fn Hero() -> Element {
-    rsx! {}
-}
-
-/// Home page
-#[component]
-fn Home() -> Element {
-    rsx! {
-        Hero {}
-    }
-}
-
-/// Shared navbar component.
 #[component]
 fn Navbar() -> Element {
     rsx! {
@@ -67,7 +63,7 @@ fn Navbar() -> Element {
             class: "navbar bg-base-300",
             Link {
                 class: "p-2 font-bold",
-                to: Route::Home {},
+                to: Routes::home(),
                 img { class: "h-8", src: LOGO_SVG }
             }
         }
