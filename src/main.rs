@@ -1,20 +1,34 @@
 use dioxus::prelude::*;
 
+mod components;
 mod pages;
 
-use pages::HomePage;
+use pages::{HomePage, PrivacyPage, TermsPage};
 
 #[derive(Debug, Clone, Routable, PartialEq)]
 #[rustfmt::skip]
+#[allow(clippy::enum_variant_names)]
 enum Routes {
-    #[layout(Navbar)]
+    #[layout(Layout)]
         #[route("/")]
         HomePage {},
+        #[route("/privacy")]
+        PrivacyPage {},
+        #[route("/terms")]
+        TermsPage {},
 }
 
 impl Routes {
-    fn home() {
+    fn home() -> Self {
         Self::HomePage {}
+    }
+
+    fn privacy() -> Self {
+        Self::PrivacyPage {}
+    }
+
+    fn terms() -> Self {
+        Self::TermsPage {}
     }
 }
 
@@ -57,17 +71,37 @@ fn App() -> Element {
 }
 
 #[component]
-fn Navbar() -> Element {
+fn Layout() -> Element {
     rsx! {
-        div {
-            class: "navbar bg-base-300",
-            Link {
-                class: "p-2 font-bold",
-                to: Routes::home(),
-                img { class: "h-8", src: LOGO_SVG }
+        div { class: "navbar bg-base-300",
+            div { class: "navbar-start",
+                Link { class: "p-2 font-bold", to: Routes::home(),
+                    img { class: "h-8", src: LOGO_SVG }
+                }
+            }
+
+            div { class: "navbar-right",
+                ul { class: "menu menu-horizontal",
+                    li {
+                        Link { to: Routes::home(), "Home" }
+                    }
+
+                    li {
+                        Link { to: Routes::terms(), "Terms of Service" }
+                    }
+
+                    li {
+                        Link { to: Routes::privacy(), "Privacy Policy" }
+                    }
+                }
             }
         }
 
-        Outlet::<Route> {}
+        main { class: "main", Outlet::<Routes> {} }
     }
+}
+
+#[server(endpoint = "static_routes", output = server_fn::codec::Json)]
+async fn static_routes() -> Result<Vec<String>, ServerFnError> {
+    Ok(Routes::static_routes().iter().map(ToString::to_string).collect())
 }
