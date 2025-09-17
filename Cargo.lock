@@ -301,7 +301,6 @@ dependencies = [
  "dioxus-stores",
  "dioxus-web",
  "manganis",
- "serde",
  "subsecond",
  "warnings",
 ]

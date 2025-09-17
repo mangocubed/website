@@ -100,8 +100,3 @@ fn Layout() -> Element {
         main { class: "main", Outlet::<Routes> {} }
     }
 }
-
-#[server(endpoint = "static_routes", output = server_fn::codec::Json)]
-async fn static_routes() -> Result<Vec<String>, ServerFnError> {
-    Ok(Routes::static_routes().iter().map(ToString::to_string).collect())
-}
