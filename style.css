@@ -1,4 +1,6 @@
 @import "tailwindcss" source("./src");
+
+@plugin "@tailwindcss/typography";
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
@@ -13,4 +15,12 @@
     default: false;
     prefersdark: false;
     color-scheme: light;
+}
+
+@utility h1 {
+    @apply text-2xl font-bold mb-6;
+}
+
+@utility main {
+    @apply max-w-[1300px] mx-auto p-4;
 }

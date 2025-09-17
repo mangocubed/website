@@ -1,11 +1,35 @@
 use dioxus::prelude::*;
 
+mod components;
+mod pages;
+
+use pages::{HomePage, PrivacyPage, TermsPage};
+
 #[derive(Debug, Clone, Routable, PartialEq)]
 #[rustfmt::skip]
-enum Route {
-    #[layout(Navbar)]
+#[allow(clippy::enum_variant_names)]
+enum Routes {
+    #[layout(Layout)]
         #[route("/")]
-        Home {},
+        HomePage {},
+        #[route("/privacy")]
+        PrivacyPage {},
+        #[route("/terms")]
+        TermsPage {},
+}
+
+impl Routes {
+    fn home() -> Self {
+        Self::HomePage {}
+    }
+
+    fn privacy() -> Self {
+        Self::PrivacyPage {}
+    }
+
+    fn terms() -> Self {
+        Self::TermsPage {}
+    }
 }
 
 const FAVICON_ICO: Asset = asset!("assets/favicon.ico");
@@ -42,36 +66,42 @@ fn App() -> Element {
     rsx! {
         document::Link { rel: "icon", href: FAVICON_ICO }
         document::Link { rel: "stylesheet", href: STYLE_CSS }
-        Router::<Route> {}
+        Router::<Routes> {}
     }
 }
 
 #[component]
-pub fn Hero() -> Element {
-    rsx! {}
-}
-
-/// Home page
-#[component]
-fn Home() -> Element {
+fn Layout() -> Element {
     rsx! {
-        Hero {}
-    }
-}
+        div { class: "navbar bg-base-300",
+            div { class: "navbar-start",
+                Link { class: "p-2 font-bold", to: Routes::home(),
+                    img { class: "h-8", src: LOGO_SVG }
+                }
+            }
 
-/// Shared navbar component.
-#[component]
-fn Navbar() -> Element {
-    rsx! {
-        div {
-            class: "navbar bg-base-300",
-            Link {
-                class: "p-2 font-bold",
-                to: Route::Home {},
-                img { class: "h-8", src: LOGO_SVG }
+            div { class: "navbar-right",
+                ul { class: "menu menu-horizontal",
+                    li {
+                        Link { to: Routes::home(), "Home" }
+                    }
+
+                    li {
+                        Link { to: Routes::terms(), "Terms of Service" }
+                    }
+
+                    li {
+                        Link { to: Routes::privacy(), "Privacy Policy" }
+                    }
+                }
             }
         }
 
-        Outlet::<Route> {}
+        main { class: "main", Outlet::<Routes> {} }
     }
+}
+
+#[server(endpoint = "static_routes", output = server_fn::codec::Json)]
+async fn static_routes() -> Result<Vec<String>, ServerFnError> {
+    Ok(Routes::static_routes().iter().map(ToString::to_string).collect())
 }
