@@ -72,7 +72,9 @@ pub fn TermsPage() -> Element {
         }
 
         ul {
-            li { "upload, access, store, manage and download images" }
+            li {
+                "upload, access, store, manage, share, communicate, and download images (\"Files\") and data (\"Data\")"
+           }
         }
 
         h2 { class: "h2", "2. PRIVACY POLICY" }
@@ -114,7 +116,90 @@ pub fn TermsPage() -> Element {
         h2 { class: "h2", "4. REGISTRATION FOR SUBSCRIBERS" }
 
         p {
-            ""
+            "a) Setting up an Account: A Visitor may only use our Platform and Services (\"Registration\") if they
+            set up an account on our Platform (\"Account\"). For setting up an Account, they will be required to (a)
+            enter their email address, and (b) set up a password (\"Password\") (collectively, the \"Account
+            Information\"). Upon setting up an Account, the Visitor shall become a Subscriber."
+        }
+        
+        p {
+            "b) Financial Information and Subscription: Upon Registration, Subscribers will automatically be allowed
+            to use the \"Free Plan\" as defined and detailed in Section 6 of these Terms. Subscribers may upgrade and
+            change to a different plan (\"Subscription\"), as defined and detailed in Section 6 of these Terms, at any
+            time during the Free Plan or at the Registration itself. To confirm a Subscription, Subscribers will have
+            to provide us with certain financial information, as collected by our third party payment processors. By
+            confirming Subscription, Subscribers will allow Mango³ to charge their card for the payments (including
+            future payments), as authorized in accordance the Subscription Plan selected."
+        }
+        
+        h2 { class: "h2", "5. SUBSCRIBERS' USE OF OUR PLATFORM" }
+        
+        p {
+            "a) Subscriber's Files and Data: When Subscribers use our Services, they provide us with their Files and
+            Data. These Terms don't give us any rights to a Subscriber's Files and Data except for the limited rights
+            that enable us to offer the Services. We need a Subscriber's permission to host their Files and Data, back
+            it up, and share it when a Subscriber asks us to. Subscribers represent and warrant that they own, or are
+            authorized to use, any intellectual property in any Files or Data they store on, use, download, upload,
+            share, access, transmit or otherwise make available to or from, our systems or using our services.
+            Subscribers grant us a worldwide, royalty-free license to use, store, back-up, copy, transmit, distribute,
+            communicate, modify and otherwise make available, their Files and Data, solely for the purposes of providing
+            our Services and in accordance with these Terms and the "
+            
+            LinkToPrivacy {}
+            
+            "."
+        }
+        
+        p {
+            "b) Allowing Others to Access Data: If a Subscriber allows others (Authorized Persons) to access Subscriber's
+            data (e.g. via any of the sharing features such as public links within Mango³), (i) the Authorized Person
+            must accept these Terms, (ii) the Subscriber will be responsible for actions and omissions of the Authorized
+            Persons while they are using our Services, and (iii) the Subscriber agrees to fully indemnify us for any
+            claim, loss, damage, fine, costs (including our legal fees) and other liability if Authorized Persons breach
+            any of these Terms."
+        }
+        
+        p {
+            "c) Subscriber's Undertakings: Subscribers (i) represent and warrant that all information they provide is
+            true, accurate, current and complete, (ii) agree to maintain and update Account Information to keep it current,
+            (iii) understand that they are responsible for maintaining the confidentiality of their Account Information,
+            (iv) may not transfer or share Account Information with anyone unless they are Authorized Person,
+            (v) understand that if they lose or misplace their Password, they will lose access to their Files and Data;
+            (vi) shall maintain copies of all Data stored by them on our Platform, (vii) agree to immediately notify us
+            upon becoming aware of any unauthorized use of their Account Information or Recovery Key, and (viii) understand
+            that they are responsible for all activities that occur under their Account."
+        }
+        
+        p {
+            "d) Mango³'s Obligations: Mango³ reserves the right to take any and all action, as it deems necessary, regarding
+            the security of our Service and a Subscriber's Account Information. Under no circumstances shall Mango³ be held
+            liable to a Subscriber for any liabilities or damages resulting from or arising out of a Subscriber's use of the
+            Platform, Account Information or a Subscriber's release of the Account Information to a third party. Mango³
+            confirms that it will never send Subscribers emails asking for Subscriber's Password."
+        }
+        
+        h2 { class: "h2", "6. PLANS AND PAYMENT" }
+        
+        p {
+            "a) For Visitors: Access to our websites or apps is currently provided at no cost. If we change this in the
+            future, we will communicate such modification to Visitors as per the procedure detailed under these Terms."
+        }
+        
+        p { "b) For Subscribers:" }
+        
+        p {
+            "(i) Free Plan: Subscribers can register to use our Services on a trial basis as per the terms of these Terms
+            (\"Free Plan\"). Upon Registration, Subscribers will automatically be allowed to use the Free Plan."
+        }
+        
+        p {
+            "(ii) Paid Plans: Mango³ offers monthly and yearly paid Subscription plans (\"Paid Plans\"). Each Paid Plan allows
+            a certain usage/storage limit, that is the amount of Files and Data Subscribers may upload and store on our Platform
+            (\"Storage Limit\"). Subscribers may opt to subscribe to a Paid Plan at the time of Registration or at any time
+            during the Free Plan (\"Purchase\" or \"Paid Subscription\"). Subscribers may increase their Storage Limit at any
+            time during the duration of their ongoing Paid Plan by updating to a different Paid Plan and consenting to the such
+            different Paid Plan's payment terms and Storage Limits. In the event that we modify the Paid Plans and their
+            respective fees (\"Fees\") in the future, we will update that on the aforementioned link."
         }
     }
 }
