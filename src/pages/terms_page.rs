@@ -1,7 +1,8 @@
 use dioxus::prelude::*;
 
+use sdk::components::PageTitle;
+
 use crate::Routes;
-use crate::components::PageTitle;
 
 #[component]
 fn LinkToPrivacy() -> Element {
@@ -17,9 +18,11 @@ pub fn TermsPage() -> Element {
 
         h1 { class: "h1", "Terms of Service" }
 
-        div {
-            class: "prose prose-h2:text-xl max-w-none",
-            p { class: "text-right", "Last updated on: " span { class: "font-bold", "September 17, 2025" } }
+        div { class: "prose prose-h2:text-xl max-w-none",
+            p { class: "text-right",
+                "Last updated on: "
+                span { class: "font-bold", "September 17, 2025" }
+            }
 
             p {
                 "These Terms of Service (\"Agreement\", or \"Terms\") are a legally binding agreement between Mango³ Group
@@ -53,7 +56,7 @@ pub fn TermsPage() -> Element {
                 shall constitute User's acceptance of this Agreement and to all of the terms and conditions stated under
                 this Agreement and our "
 
-            LinkToPrivacy {}
+                LinkToPrivacy {}
 
                 " referenced herein."
             }
@@ -77,7 +80,7 @@ pub fn TermsPage() -> Element {
             ul {
                 li {
                     "upload, access, store, manage, share, communicate, and download images (\"Files\") and data (\"Data\")"
-            }
+                }
             }
 
             h2 { "2. PRIVACY POLICY" }
@@ -255,7 +258,7 @@ pub fn TermsPage() -> Element {
             p {
                 "a) For Visitors: We reserve the right to cease providing Visitors with access to all or part of our
                 Services at any time for any reason, including, but not limited to, if we reasonably believe:
-                (i) they have violated this Agreement or our ",
+                (i) they have violated this Agreement or our "
 
                 LinkToPrivacy {}
 
@@ -263,9 +266,7 @@ pub fn TermsPage() -> Element {
                 (iii) the provision of our Services to them is no longer commercially viable."
             }
 
-            p {
-                "b) For Subscribers:"
-            }
+            p { "b) For Subscribers:" }
 
             p {
                 "(i) Termination by us: We reserve the right to suspend or terminate a Subscriber's Account and their
@@ -360,7 +361,9 @@ pub fn TermsPage() -> Element {
             }
 
             p {
-                "ii. Review our " LinkToPrivacy {} " and comply with the same;"
+                "ii. Review our "
+                LinkToPrivacy {}
+                " and comply with the same;"
             }
 
             p { "iii. Make sure that their internet connection is adequate;" }
@@ -377,7 +380,9 @@ pub fn TermsPage() -> Element {
                 as permitted by applicable open source licenses;"
             }
 
-            p { "vi. To not resell or otherwise supply our Services to anyone else without our prior written consent;" }
+            p {
+                "vi. To not resell or otherwise supply our Services to anyone else without our prior written consent;"
+            }
 
             p {
                 "vii. To not imply or state, directly or indirectly, that they are affiliated with or endorsed by Mango³
@@ -521,7 +526,9 @@ pub fn TermsPage() -> Element {
                 maintained by our websites or apps;"
             }
 
-            p { "(iv) that our Services will be available on an uninterrupted, secure, or error-free basis;" }
+            p {
+                "(iv) that our Services will be available on an uninterrupted, secure, or error-free basis;"
+            }
 
             p { "(v) that the Services should be available 24 hours a day, seven days a week;" }
 
@@ -571,7 +578,9 @@ pub fn TermsPage() -> Element {
 
             p { "i. User's physical or electronic signature;" }
 
-            p { "ii. Identification of the copyrighted work(s) that Users claim to have been infringed;" }
+            p {
+                "ii. Identification of the copyrighted work(s) that Users claim to have been infringed;"
+            }
 
             p {
                 "iii. Identification of the material on our websites or apps that Users claim is infringing and that
@@ -768,7 +777,7 @@ pub fn TermsPage() -> Element {
                 continued use of our Services confirms your acceptance of our updated Agreement."
             }
 
-            h4 {"19. RELATIONSHIP OF MANGO³ WITH USERS" }
+            h4 { "19. RELATIONSHIP OF MANGO³ WITH USERS" }
 
             p {
                 "The parties hereto are independent contractors, and nothing contained herein shall be interpreted as

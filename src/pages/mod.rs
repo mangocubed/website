@@ -57,6 +57,8 @@ pub fn Page(slug: ReadSignal<PageSlug>) -> Element {
         PageSlug::Home => HomePage(),
         PageSlug::Privacy => PrivacyPage(),
         PageSlug::Terms => TermsPage(),
-        PageSlug::NotFound => rsx! { h1 { class: "h1", "Page not found" } },
+        PageSlug::NotFound => rsx! {
+            h1 { class: "h1", "Page not found" }
+        },
     }
 }
