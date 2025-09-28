@@ -1,21 +1,4 @@
-@import "tailwindcss" source("./src");
-
-@plugin "@tailwindcss/typography";
-@plugin "daisyui";
-
-@plugin "daisyui/theme" {
-    name: "dark";
-    default: true;
-    prefersdark: true;
-    color-scheme: dark;
-}
-
-@plugin "daisyui/theme" {
-    name: "light";
-    default: false;
-    prefersdark: false;
-    color-scheme: light;
-}
+@import "sdk";
 
 @utility h1 {
     @apply text-2xl font-bold mb-6;

@@ -1,0 +1,23 @@
+name: Setup Dioxus
+description: Setup Dioxus environment with dependencies
+
+runs:
+    using: composite
+    steps:
+        - uses: actions/cache@v4
+          with:
+              path: |
+                  ~/.cargo/
+                  ~/.dioxus/
+                  ~/.rustup/
+                  target/
+              key: ${{ runner.os }}-cargo-{{ hashFiles('**/Cargo.lock') }}
+        - uses: cargo-bins/cargo-binstall@main
+        - name: Install Dioxus CLI
+          shell: bash
+          run: cargo binstall -y dioxus-cli@0.7.0-rc.0
+        - name: Add additional Rustup targets
+          shell: bash
+          run: rustup target add wasm32-unknown-unknown
+        - shell: bash
+          run: touch assets/style.css

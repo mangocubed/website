@@ -1,6 +1,5 @@
 use dioxus::prelude::*;
 
-mod components;
 mod pages;
 
 use pages::{Page, PageSlug};

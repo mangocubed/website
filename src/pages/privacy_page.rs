@@ -1,7 +1,8 @@
 use dioxus::prelude::*;
 
+use sdk::components::PageTitle;
+
 use crate::Routes;
-use crate::components::PageTitle;
 
 #[component]
 fn LinkToTerms() -> Element {

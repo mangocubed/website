@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 
-use crate::components::PageTitle;
+use sdk::components::PageTitle;
 
 #[component]
 pub fn HomePage() -> Element {
