@@ -18,9 +18,11 @@ pub fn PrivacyPage() -> Element {
 
         h1 { class: "h1", "Privacy Policy" }
 
-        div {
-            class: "prose prose-h2:text-xl max-w-none",
-            p { class: "text-right", "Last updated on: " span { class: "font-bold", "September 17, 2025" } }
+        div { class: "prose prose-h2:text-xl max-w-none",
+            p { class: "text-right",
+                "Last updated on: "
+                span { class: "font-bold", "September 17, 2025" }
+            }
 
             p {
                 "Mango³ Group (\"Mango³\", \"we\", \"us\", \"our\") respects the privacy of its Users (\"User\",
@@ -39,9 +41,7 @@ pub fn PrivacyPage() -> Element {
                 "If you do not agree with the terms of this privacy policy, please do not access and use our Services."
             }
 
-            p {
-                "We do not sell your personal information, nor do we intend to do so."
-            }
+            p { "We do not sell your personal information, nor do we intend to do so." }
 
             h2 { "1. INTRODUCTION" }
 
@@ -110,7 +110,9 @@ pub fn PrivacyPage() -> Element {
 
             p { "d) Uploaded Information:" }
 
-            p { "We use the limited information collected from you only to provide you with our Services." }
+            p {
+                "We use the limited information collected from you only to provide you with our Services."
+            }
 
             p { "e) Information collected from Children:" }
 
@@ -182,9 +184,7 @@ pub fn PrivacyPage() -> Element {
                 }
 
                 li {
-                    p {
-                        "Retention of your data:"
-                    }
+                    p { "Retention of your data:" }
 
                     p {
                         "a. While you are subscribed: We keep your Files while you are subscribed to our Services,
@@ -195,13 +195,11 @@ pub fn PrivacyPage() -> Element {
                         "."
                     }
 
-                    p {
-                        "b. After suspension/termination of your account:"
-                    }
+                    p { "b. After suspension/termination of your account:" }
 
                     ul {
                         li {
-                           "Your Files: After account termination, all your Files will be marked for deletion and
+                            "Your Files: After account termination, all your Files will be marked for deletion and
                            removed when the next appropriate file purging process is run."
                         }
 
@@ -551,10 +549,7 @@ pub fn PrivacyPage() -> Element {
                         li {
                             "Contact: "
 
-                            a {
-                                href: "support@polar.sh",
-                                "support@polar.sh"
-                            }
+                            a { href: "support@polar.sh", "support@polar.sh" }
                         }
                     }
                 }
@@ -688,7 +683,7 @@ pub fn PrivacyPage() -> Element {
                 " to submit a DMCA Takedown Notice to us."
             }
 
-            h2 {"16. THIRD-PARTY WEBSITES" }
+            h2 { "16. THIRD-PARTY WEBSITES" }
 
             p {
                 "We do allow links to third-party web pages. These third-party sites have separate and independent
