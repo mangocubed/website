@@ -1,7 +1,11 @@
 use dioxus::prelude::*;
 
+use sdk::components::Footer;
+
+mod constants;
 mod pages;
 
+use constants::{COPYRIGHT, SOURCE_CODE_URL};
 use pages::{Page, PageSlug};
 
 #[derive(Debug, Clone, Routable, PartialEq)]
@@ -41,6 +45,10 @@ fn main() {
 #[component]
 fn App() -> Element {
     rsx! {
+        document::Meta {
+            name: "viewport",
+            content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
+        }
         document::Link { rel: "icon", href: FAVICON_ICO }
         document::Link { rel: "stylesheet", href: STYLE_CSS }
 
@@ -51,31 +59,61 @@ fn App() -> Element {
 #[component]
 fn Layout() -> Element {
     rsx! {
-        div { class: "navbar bg-base-300",
-            div { class: "navbar-start",
-                Link { class: "p-2 font-bold", to: Routes::home(),
-                    img { class: "h-[36px] sm:hidden", src: ICON_SVG }
-                    img { class: "h-[36px] max-sm:hidden", src: LOGO_SVG }
+        div { class: "flex flex-col min-h-screen",
+            div { class: "navbar bg-base-300",
+                div { class: "navbar-start",
+                    Link { class: "p-2 font-bold", to: Routes::home(),
+                        img { class: "h-[36px] sm:hidden", src: ICON_SVG }
+                        img { class: "h-[36px] max-sm:hidden", src: LOGO_SVG }
+                    }
+                }
+
+                div { class: "navbar-right",
+                    ul { class: "menu menu-horizontal",
+                        li {
+                            Link { to: Routes::terms(), "Terms of Service" }
+                        }
+
+                        li {
+                            Link { to: Routes::privacy(), "Privacy Policy" }
+                        }
+                    }
                 }
             }
 
-            div { class: "navbar-right",
-                ul { class: "menu menu-horizontal",
-                    li {
-                        Link { to: Routes::home(), "Home" }
+            main { class: "main grow", Outlet::<Routes> {} }
+
+            Footer {
+                aside { class: "opacity-75",
+                    p {
+                        "Version: "
+                        {env!("CARGO_PKG_VERSION")}
+                        " ("
+                        {env!("GIT_REV_SHORT")}
+                        ")"
                     }
 
-                    li {
-                        Link { to: Routes::terms(), "Terms of Service" }
+                    p {
+                        "Built on: "
+                        {env!("BUILD_DATETIME")}
                     }
 
-                    li {
-                        Link { to: Routes::privacy(), "Privacy Policy" }
+                    p { {COPYRIGHT} }
+                }
+
+                nav {
+                    Link { to: Routes::terms(), "Terms of Service" }
+
+                    Link { to: Routes::privacy(), "Privacy Policy" }
+
+                    a {
+                        class: "link",
+                        href: SOURCE_CODE_URL.clone(),
+                        target: "_blank",
+                        "Source code"
                     }
                 }
             }
         }
-
-        main { class: "main", Outlet::<Routes> {} }
     }
 }
