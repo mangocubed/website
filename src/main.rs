@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 
-use sdk::components::Footer;
+use sdk::components::{AppProvider, Brand, Footer, LoadingOverlay, Navbar, NavbarEnd, NavbarStart};
 
 mod constants;
 mod pages;
@@ -34,8 +34,6 @@ impl Routes {
 }
 
 const FAVICON_ICO: Asset = asset!("assets/favicon.ico");
-const ICON_SVG: Asset = asset!("assets/icon.svg");
-const LOGO_SVG: Asset = asset!("assets/logo.svg");
 const STYLE_CSS: Asset = asset!("assets/style.css");
 
 fn main() {
@@ -44,6 +42,10 @@ fn main() {
 
 #[component]
 fn App() -> Element {
+    let mut app_is_loading = use_signal(|| true);
+
+    use_effect(move || app_is_loading.set(false));
+
     rsx! {
         document::Meta {
             name: "viewport",
@@ -52,7 +54,9 @@ fn App() -> Element {
         document::Link { rel: "icon", href: FAVICON_ICO }
         document::Link { rel: "stylesheet", href: STYLE_CSS }
 
-        Router::<Routes> {}
+        AppProvider { Router::<Routes> {} }
+
+        LoadingOverlay { is_visible: app_is_loading }
     }
 }
 
@@ -60,15 +64,12 @@ fn App() -> Element {
 fn Layout() -> Element {
     rsx! {
         div { class: "flex flex-col min-h-screen",
-            div { class: "navbar bg-base-300",
-                div { class: "navbar-start",
-                    Link { class: "p-2 font-bold", to: Routes::home(),
-                        img { class: "h-[36px] sm:hidden", src: ICON_SVG }
-                        img { class: "h-[36px] max-sm:hidden", src: LOGO_SVG }
-                    }
+            Navbar {
+                NavbarStart {
+                    Link { to: Routes::home(), Brand {} }
                 }
 
-                div { class: "navbar-right",
+                NavbarEnd {
                     ul { class: "menu menu-horizontal",
                         li {
                             Link { to: Routes::terms(), "Terms of Service" }
