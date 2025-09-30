@@ -1693,8 +1693,8 @@ checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
 
 [[package]]
 name = "sdk"
-version = "0.0.0-alpha.1"
-source = "git+https://github.com/mangocubed/sdk.git?tag=v0.0.0-alpha.1#1301bd587d5d002e90bf396a3f01a44247a24d3d"
+version = "0.0.0-alpha.2"
+source = "git+https://github.com/mangocubed/sdk.git?tag=v0.0.0-alpha.2#c5c3de634406d6072853ac9cc06a5432d92de3f8"
 dependencies = [
  "dioxus",
 ]
