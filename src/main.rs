@@ -1,35 +1,40 @@
 use dioxus::prelude::*;
 
-use sdk::components::{AppProvider, Brand, Footer, LoadingOverlay, Navbar, NavbarEnd, NavbarStart};
+use sdk::app::components::{AppProvider, Brand, Footer, Navbar, NavbarEnd, NavbarStart};
+use sdk::constants::COPYRIGHT;
 
 mod constants;
 mod pages;
 
-use constants::{COPYRIGHT, SOURCE_CODE_URL};
-use pages::{Page, PageSlug};
+use constants::SOURCE_CODE_URL;
+use pages::{FakeHomePage, HomePage, PrivacyPage, TermsPage};
 
 #[derive(Debug, Clone, Routable, PartialEq)]
 #[rustfmt::skip]
 #[allow(clippy::enum_variant_names)]
 enum Routes {
     #[layout(Layout)]
-        #[route("/#:slug")]
-        Page { slug: PageSlug },
+        #[route("/")]
+        FakeHomePage,
+        #[route("/home")]
+        HomePage,
+        #[route("/privacy")]
+        PrivacyPage,
+        #[route("/terms")]
+        TermsPage,
 }
 
 impl Routes {
     fn home() -> Self {
-        Self::Page { slug: PageSlug::Home }
+        Self::FakeHomePage
     }
 
     fn privacy() -> Self {
-        Self::Page {
-            slug: PageSlug::Privacy,
-        }
+        Self::PrivacyPage
     }
 
     fn terms() -> Self {
-        Self::Page { slug: PageSlug::Terms }
+        Self::TermsPage
     }
 }
 
@@ -37,7 +42,28 @@ const FAVICON_ICO: Asset = asset!("assets/favicon.ico");
 const STYLE_CSS: Asset = asset!("assets/style.css");
 
 fn main() {
-    dioxus::launch(App);
+    dioxus::LaunchBuilder::new()
+        .with_cfg(server_only! {
+            ServeConfig::builder()
+                .incremental(
+                    dioxus::server::IncrementalRendererConfig::new()
+                        .static_dir(
+                            std::env::current_exe()
+                                .unwrap()
+                                .parent()
+                                .unwrap()
+                                .join("public")
+                        )
+                        .clear_cache(false)
+                )
+                .enable_out_of_order_streaming()
+        })
+        .launch(App);
+}
+
+#[server(endpoint = "static_routes", output = server_fn::codec::Json)]
+async fn static_routes() -> Result<Vec<String>, ServerFnError> {
+    Ok(Routes::static_routes().iter().map(ToString::to_string).collect())
 }
 
 #[component]
@@ -54,9 +80,7 @@ fn App() -> Element {
         document::Link { rel: "icon", href: FAVICON_ICO }
         document::Link { rel: "stylesheet", href: STYLE_CSS }
 
-        AppProvider { Router::<Routes> {} }
-
-        LoadingOverlay { is_visible: app_is_loading }
+        AppProvider { is_starting: app_is_loading, Router::<Routes> {} }
     }
 }
 

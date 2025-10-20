@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 
-use sdk::components::PageTitle;
+use sdk::app::components::{H1, PageTitle};
 
 use crate::Routes;
 
@@ -16,7 +16,7 @@ pub fn TermsPage() -> Element {
     rsx! {
         PageTitle { "Terms of Service" }
 
-        h1 { class: "h1", "Terms of Service" }
+        H1 { "Terms of Service" }
 
         div { class: "prose prose-h2:text-xl max-w-none",
             p { class: "text-right",
