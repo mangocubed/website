@@ -16,7 +16,7 @@ pub fn PrivacyPage() -> Element {
     rsx! {
         PageTitle { "Privacy Policy" }
 
-        H1 {  "Privacy Policy" }
+        H1 { "Privacy Policy" }
 
         div { class: "prose prose-h2:text-xl max-w-none",
             p { class: "text-right",
