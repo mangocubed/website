@@ -1,12 +1,12 @@
 use dioxus::prelude::*;
 
-use sdk::app::components::{AppProvider, Brand, Footer, Navbar, NavbarEnd, NavbarStart};
-use sdk::constants::COPYRIGHT;
+use sdk::app::components::AppProvider;
 
 mod constants;
+mod layout;
 mod pages;
 
-use constants::SOURCE_CODE_URL;
+use layout::Layout;
 use pages::{FakeHomePage, HomePage, PrivacyPage, TermsPage};
 
 #[derive(Debug, Clone, Routable, PartialEq)]
@@ -81,64 +81,5 @@ fn App() -> Element {
         document::Link { rel: "stylesheet", href: STYLE_CSS }
 
         AppProvider { is_starting: app_is_loading, Router::<Routes> {} }
-    }
-}
-
-#[component]
-fn Layout() -> Element {
-    rsx! {
-        div { class: "flex flex-col min-h-screen",
-            Navbar {
-                NavbarStart {
-                    Link { to: Routes::home(), Brand {} }
-                }
-
-                NavbarEnd {
-                    ul { class: "menu menu-horizontal",
-                        li {
-                            Link { to: Routes::terms(), "Terms of Service" }
-                        }
-
-                        li {
-                            Link { to: Routes::privacy(), "Privacy Policy" }
-                        }
-                    }
-                }
-            }
-
-            main { class: "main grow", Outlet::<Routes> {} }
-
-            Footer {
-                aside { class: "opacity-75",
-                    p {
-                        "Version: "
-                        {env!("CARGO_PKG_VERSION")}
-                        " ("
-                        {env!("GIT_REV_SHORT")}
-                        ")"
-                    }
-
-                    p {
-                        "Built on: "
-                        {env!("BUILD_DATETIME")}
-                    }
-
-                    p { {COPYRIGHT} }
-                }
-
-                nav {
-                    Link { to: Routes::terms(), "Terms of Service" }
-
-                    Link { to: Routes::privacy(), "Privacy Policy" }
-
-                    a {
-                        class: "link",
-                        href: SOURCE_CODE_URL.clone(),
-                        target: "_blank",
-                        "Source code"
-                    }
-                }
-            }
-        }
     }
 }

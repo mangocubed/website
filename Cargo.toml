@@ -9,8 +9,11 @@ repository = "https://github.com/mangocubed/website"
 chrono = "0.4.42"
 
 [dependencies]
-dioxus = { version = "0.7.0-rc.2", features = ["fullstack", "router"] }
-sdk = { git = "https://github.com/mangocubed/sdk.git", tag = "v0.0.0-alpha.8", features = [
+dioxus = { git = "https://github.com/javierEd/dioxus.git", rev = "223c320", features = [
+    "router",
+    "fullstack",
+] }
+sdk = { git = "https://github.com/mangocubed/sdk.git", tag = "v0.0.0-alpha.10", features = [
     "app",
 ] }
 
