@@ -4,6 +4,6 @@
         "watch": "npx @tailwindcss/cli --minify --input ./style.css --output ./assets/style.css --watch"
     },
     "dependencies": {
-        "sdk": "github:mangocubed/sdk#v0.0.0-alpha.17"
+        "sdk": "github:mangocubed/sdk#v0.0.0-alpha.20"
     }
 }
