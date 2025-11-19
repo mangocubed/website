@@ -10,7 +10,9 @@ chrono = "0.4.42"
 
 [dependencies]
 dioxus = { version = "0.7.1", features = ["router", "fullstack"] }
-sdk = { git = "https://github.com/mangocubed/sdk.git", tag = "v0.0.0-alpha.17", features = [
+dioxus-i18n = "0.5.0"
+unic-langid = { version = "0.9.6", features = ["serde"] }
+sdk = { git = "https://github.com/mangocubed/sdk.git", tag = "v0.0.0-alpha.20", features = [
     "app",
 ] }
 
