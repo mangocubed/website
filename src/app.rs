@@ -2,17 +2,15 @@ use dioxus::prelude::*;
 
 use dioxus_i18n::prelude::{I18nConfig, use_init_i18n};
 use sdk::app::components::AppProvider;
-use sdk::app::storage::{use_local_storage, use_storage_is_enabled};
-use unic_langid::{LanguageIdentifier, langid};
+use sdk::app::storage::{LocalStorage, StorageBacking};
+use unic_langid::langid;
 
 use crate::Routes;
-use crate::constants::{FAVICON_ICO, STYLE_CSS};
+use crate::constants::{FAVICON_ICO, KEY_LANGUAGE, STYLE_CSS};
 
 #[component]
 pub fn App() -> Element {
     let mut app_is_starting = use_signal(|| true);
-    let storage_is_enabled = use_storage_is_enabled();
-    let mut language_storage = use_local_storage::<LanguageIdentifier>("_language");
 
     let mut i18n = use_init_i18n(|| {
         I18nConfig::new(langid!("en"))
@@ -21,23 +19,12 @@ pub fn App() -> Element {
     });
 
     use_effect(move || {
-        if storage_is_enabled()
-            && let Some(language) = &*language_storage.peek()
-        {
-            i18n.set_language(language.clone());
-        }
+        i18n.set_language(LocalStorage::get(&KEY_LANGUAGE.to_owned()).unwrap_or_else(|| langid!("en")));
+        app_is_starting.set(false);
     });
 
     use_effect(move || {
-        if storage_is_enabled() {
-            language_storage.set(Some(i18n.language()));
-        }
-    });
-
-    use_effect(move || {
-        if storage_is_enabled() {
-            app_is_starting.set(false);
-        }
+        LocalStorage::set(KEY_LANGUAGE.to_owned(), &i18n.language());
     });
 
     rsx! {
