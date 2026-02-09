@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Home | {{ super() }}{% endblock title %} {% block content %}
+<section class="mt-4">
+    <div class="hero bg-base-200 p-4 rounded-2xl">
+        <div class="hero-content text-center">
+            <div>
+                <h1 class="h1 text-4xl">Hi there!</h1>
+
+                <div class="flex flex-wrap gap-2 mb-2 items-center justify-center">
+                    <span class="text-2xl font-bold">Welcome to</span>
+
+                    <img alt="Mango³" class="h-6 w-auto" src="{{ get_url(path='logo.svg') }}" />
+                </div>
+
+                <p class="text-xl">We are a small group of people building some cool stuff</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

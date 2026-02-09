@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "npx @tailwindcss/cli --minify --input ./style.css --output ./static/style.css",
+        "watch": "npx @tailwindcss/cli --minify --input ./style.css --output ./static/style.css --watch"
+    },
+    "dependencies": {
+        "daisyui": "^5.5.18"
+    },
+    "devDependencies": {
+        "tailwindcss": "^4.1.18"
+    }
+}

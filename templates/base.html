@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit: contain"
+        />
+        <title>{% block title %}Mango³{% endblock title %}</title>
+        <link rel="stylesheet" href="{{ get_url(path='style.css') }}" />
+        <link rel="icon" href="{{ get_url(path='favicon.ico') }}" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <a href="/">
+                        <div class="brand">
+                            <img alt="Mango³" class="brand-icon" src="{{ get_url(path='icon.svg') }}" />
+
+                            <img alt="Mango³" class="brand-logo" src="{{ get_url(path='logo.svg') }}" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="layout">
+                <main class="main">{% block content %} {% endblock content %}</main>
+
+                <footer class="footer">
+                    <aside class="opacity-75">
+                        <p>Version: 0.0.0-alpha.0</p>
+
+                        <p>© 2026 Mango³ Group</p>
+                    </aside>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
