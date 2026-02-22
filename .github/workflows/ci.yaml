@@ -1,0 +1,26 @@
+name: CI
+
+on:
+    pull_request:
+        branches: [main]
+        paths-ignore:
+            - .editorconfig
+            - README.md
+
+    push:
+        branches: [main]
+        paths-ignore:
+            - .editorconfig
+            - README.md
+
+jobs:
+    analysis:
+        runs-on: ubuntu-24.04
+        container: ghcr.io/getzola/zola:v0.22.1
+        steps:
+            - uses: actions/checkout@v6
+            - uses: ./.github/actions/setup-node
+            - name: Generate CSS file
+              run: npm run build
+            - name: Check Zola
+              run: zola check

@@ -33,14 +33,6 @@
     .brand-logo {
         @apply h-9 w-auto max-sm:hidden;
     }
-
-    .brand-suffix {
-        @apply text-3xl font-bold opacity-80 empty:hidden;
-    }
-
-    .brand-dev {
-        @apply text-sm opacity-70 self-start;
-    }
 }
 
 @utility footer {
