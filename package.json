@@ -8,6 +8,6 @@
         "daisyui": "^5.5.18"
     },
     "devDependencies": {
-        "tailwindcss": "^4.1.18"
+        "tailwindcss": "^4.2.0"
     }
 }
