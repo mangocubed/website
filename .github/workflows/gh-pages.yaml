@@ -1,0 +1,43 @@
+name: Deploy on GitHub Pages
+
+on:
+    release:
+        types: [published]
+
+    workflow_dispatch:
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+concurrency:
+    group: "pages"
+    cancel-in-progress: false
+
+jobs:
+    # Build job
+    build:
+        runs-on: ubuntu-24.04
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/configure-pages@v5
+            - uses: ./.github/actions/setup-node
+            - name: Generate CSS file
+              run: npm run build
+            - name: Build Zola + upload Pages artifact
+              uses: getzola/github-pages@435a833fd3f1edcb28d70576c89e30a6365cd8f7
+              with:
+                  zola_version: v0.22.1
+
+    # Deployment job
+    deploy:
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        runs-on: ubuntu-24.04
+        needs: build
+        steps:
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
