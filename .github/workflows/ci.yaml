@@ -22,5 +22,8 @@ jobs:
             - uses: ./.github/actions/setup-node
             - name: Generate CSS file
               run: npm run build
-            - name: Check Zola
-              run: zola check
+            - name: Check site with Zola
+              run: |
+                  set -euo pipefail
+                  docker run --rm -v "${{ github.workspace }}":/workspace -w /workspace ghcr.io/getzola/zola:v0.22.1 \
+                  check
