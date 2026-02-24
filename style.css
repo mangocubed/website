@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
@@ -40,7 +41,7 @@
 }
 
 @utility h1 {
-    @apply text-2xl font-bold mb-6;
+    @apply text-3xl font-bold mb-6;
 }
 
 @utility layout {

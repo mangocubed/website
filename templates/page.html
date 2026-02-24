@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block title %}{{ page.title }} | {{ super() }}{% endblock title %} {% block content %}
+<h1 class="h1">{{ page.title }}</h1>
+
+<p class="text-right my-6">
+    Last updated on:
+    <span class="font-bold">{{ page.updated | date(format="%B %d, %Y") }}</span>
+</p>
+
+<div class="prose max-w-none">{{ page.content | safe }}</div>
+{% endblock content %}
