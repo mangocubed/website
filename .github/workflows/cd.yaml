@@ -1,13 +1,14 @@
-name: Deploy on GitHub Pages
+name: CD
 
 on:
-    release:
-        types: [published]
+    push:
+        tags:
+            - "v*"
 
     workflow_dispatch:
 
 permissions:
-    contents: read
+    contents: write
     pages: write
     id-token: write
 
@@ -29,6 +30,16 @@ jobs:
               uses: getzola/github-pages@435a833fd3f1edcb28d70576c89e30a6365cd8f7
               with:
                   zola_version: v0.22.1
+
+    release:
+        needs: build
+        runs-on: ubuntu-24.04
+        steps:
+            - uses: actions/checkout@v6
+            - uses: softprops/action-gh-release@v2
+              with:
+                  generate_release_notes: true
+                  prerelease: ${{ contains(github.ref_name, '-alpha') }}
 
     # Deployment job
     deploy:
