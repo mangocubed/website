@@ -32,6 +32,9 @@ jobs:
             - name: Add ads.txt
               if: ${{ vars.ADS_TXT != '' }}
               run: echo "${{ vars.ADS_TXT }}" > ./static/ads.txt
+            - name: Add ads.html
+              if: ${{ vars.ADS_HTML != '' }}
+              run: echo "${{ vars.ADS_HTML }}" > ./static/ads.html
             - name: Build Zola + upload Pages artifact
               uses: getzola/github-pages@435a833fd3f1edcb28d70576c89e30a6365cd8f7
               with:
