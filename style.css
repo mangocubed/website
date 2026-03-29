@@ -44,6 +44,14 @@
     @apply text-3xl font-bold mb-6;
 }
 
+@utility h2 {
+    @apply text-2xl font-bold mb-5;
+}
+
+@utility h3 {
+    @apply text-xl font-bold mb-4;
+}
+
 @utility layout {
     @apply flex grow flex-col overflow-auto;
 }
