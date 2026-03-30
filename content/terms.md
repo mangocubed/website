@@ -2,14 +2,14 @@
 title = "Terms of Service"
 slug = "terms"
 date = "2026-02-23"
-updated = "2026-02-24"
+updated = "2026-03-30"
 +++
 
 ## AGREEMENT TO OUR LEGAL TERMS
 
 Mango³ Group ("**we**," "**us**," "**our**"), is consisted of a small group of people located on Buenos Aires, Argentina.
 
-We operate the website [mango3.app](https://mango3.app) (the "**Website**"), the mobile application Mango³ Trailers (the "**Trailers**"), as well as any other related products and services that refer or link to these legal terms (the "**Legal Terms**") (collectively, the "**Services**").
+We operate the website [mango3.app](https://mango3.app) (the "**Website**"), the mobile application Trailers (the "**App**"), as well as any other related products and services that refer or link to these legal terms (the "**Legal Terms**") (collectively, the "**Services**").
 
 You can contact us by email at [contact@mango3.app](mailto:contact@mango3.app).
 
@@ -41,33 +41,35 @@ We recommend that you print a copy of these Legal Terms for your records.
 
 [9. MOBILE APPLICATION LICENSE](#9-mobile-application-license)
 
-[10. SERVICES MANAGEMENT](#10-services-management)
+[10. ADVERTISERS](#10-advertisers)
 
-[11. PRIVACY POLICY](#11-privacy-policy)
+[11. SERVICES MANAGEMENT](#11-services-management)
 
-[12. TERM AND TERMINATION](#12-term-and-termination)
+[12. PRIVACY POLICY](#12-privacy-policy)
 
-[13. MODIFICATIONS AND INTERRUPTIONS](#13-modifications-and-interruptions)
+[13. TERM AND TERMINATION](#13-term-and-termination)
 
-[14. GOVERNING LAW](#14-governing-law)
+[14. MODIFICATIONS AND INTERRUPTIONS](#14-modifications-and-interruptions)
 
-[15. DISPUTE RESOLUTION](#15-dispute-resolution)
+[15. GOVERNING LAW](#15-governing-law)
 
-[16. CORRECTIONS](#16-corrections)
+[16. DISPUTE RESOLUTION](#16-dispute-resolution)
 
-[17. DISCLAIMER](#17-disclaimer)
+[17. CORRECTIONS](#17-corrections)
 
-[18. LIMITATIONS OF LIABILITY](#18-limitations-of-liability)
+[18. DISCLAIMER](#18-disclaimer)
 
-[19. INDEMNIFICATION](#19-indemnification)
+[19. LIMITATIONS OF LIABILITY](#19-limitations-of-liability)
 
-[20. USER DATA](#20-user-data)
+[20. INDEMNIFICATION](#20-indemnification)
 
-[21. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES](#21-electronic-communications-transactions-and-signatures)
+[21. USER DATA](#21-user-data)
 
-[22. MISCELLANEOUS](#22-miscellaneous)
+[22. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES](#22-electronic-communications-transactions-and-signatures)
 
-[23. CONTACT US](#23-contact-us)
+[23. MISCELLANEOUS](#23-miscellaneous)
+
+[24. CONTACT US](#24-contact-us)
 
 ## 1. OUR SERVICES
 
@@ -180,31 +182,35 @@ If you access the Services via the App, then we grant you a revocable, non-exclu
 
 The following terms apply when you use the App obtained from either the Apple Store or Google Play (each an "App Distributor") to access the Services: (1) the license granted to you for our App is limited to a non-transferable license to use the application on a device that utilizes the Apple iOS or Android operating systems, as applicable, and in accordance with the usage rules set forth in the applicable App Distributor’s terms of service; (2) we are responsible for providing any maintenance and support services with respect to the App as specified in the terms and conditions of this mobile application license contained in these Legal Terms or as otherwise required under applicable law, and you acknowledge that each App Distributor has no obligation whatsoever to furnish any maintenance and support services with respect to the App; (3) in the event of any failure of the App to conform to any applicable warranty, you may notify the applicable App Distributor, and the App Distributor, in accordance with its terms and policies, may refund the purchase price, if any, paid for the App, and to the maximum extent permitted by applicable law, the App Distributor will have no other warranty obligation whatsoever with respect to the App; (4) you represent and warrant that (i) you are not located in a country that is subject to a US government embargo, or that has been designated by the US government as a "terrorist supporting" country and (ii) you are not listed on any US government list of prohibited or restricted parties; (5) you must comply with applicable third-party terms of agreement when using the App, e.g., if you have a VoIP application, then you must not be in violation of their wireless data service agreement when using the App; and (6) you acknowledge and agree that the App Distributors are third-party beneficiaries of the terms and conditions in this mobile application license contained in these Legal Terms, and that each App Distributor will have the right (and will be deemed to have accepted the right) to enforce the terms and conditions in this mobile application license contained in these Legal Terms against you as a third-party beneficiary thereof.
 
-## 10. SERVICES MANAGEMENT
+## 10. ADVERTISERS
+
+We allow advertisers to display their advertisements and other information in certain areas of the Services, such as sidebar advertisements or banner advertisements. We simply provide the space to place such advertisements, and we have no other relationship with advertisers.
+
+## 11. SERVICES MANAGEMENT
 
 We reserve the right, but not the obligation, to: (1) monitor the Services for violations of these Legal Terms; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Legal Terms, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Services or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Services in a manner designed to protect our rights and property and to facilitate the proper functioning of the Services.
 
-## 11. PRIVACY POLICY
+## 12. PRIVACY POLICY
 
 We care about data privacy and security. Please review our [Privacy Policy](/privacy). By using the Services, you agree to be bound by our [Privacy Policy](/privacy), which is incorporated into these Legal Terms. Please be advised the Services are hosted in the United States . If you access the Services from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the United States , then through your continued use of the Services, you are transferring your data to the United States , and you expressly consent to have your data transferred to and processed in the United States .
 
-## 12. TERM AND TERMINATION
+## 13. TERM AND TERMINATION
 
 These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SERVICES (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL TERMS OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SERVICES OR DELETE YOUR ACCOUNT AND ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.
 
 If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
 
-## 13. MODIFICATIONS AND INTERRUPTIONS
+## 14. MODIFICATIONS AND INTERRUPTIONS
 
 We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Services. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Services.
 
 We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith.
 
-## 14. GOVERNING LAW
+## 15. GOVERNING LAW
 
 These Legal Terms shall be governed by and defined following the laws of Argentina. Mango³ Group and yourself irrevocably consent that the courts of Argentina shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these Legal Terms.
 
-## 15. DISPUTE RESOLUTION
+## 16. DISPUTE RESOLUTION
 
 ### Informal Negotiations
 
@@ -222,34 +228,34 @@ The Parties agree that any arbitration shall be limited to the Dispute between t
 
 The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations binding arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party; (b) any Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy, or unauthorized use; and (c) any claim for injunctive relief. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.
 
-## 16. CORRECTIONS
+## 17. CORRECTIONS
 
 There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice.
 
-## 17. DISCLAIMER
+## 18. DISCLAIMER
 
 THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES' CONTENT OR THE CONTENT OF ANY WEBSITES OR MOBILE APPLICATIONS LINKED TO THE SERVICES AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICES, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
 
-## 18. LIMITATIONS OF LIABILITY
+## 19. LIMITATIONS OF LIABILITY
 
 IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE LESSER OF THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE one (1) MONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING OR $10.00 USD .   CERTAIN US STATE LAWS AND INTERNATIONAL LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.
 
-## 19. INDEMNIFICATION
+## 20. INDEMNIFICATION
 
 You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys’ fees and expenses, made by any third party due to or arising out of: (1) use of the Services; (2) breach of these Legal Terms; (3) any breach of your representations and warranties set forth in these Legal Terms; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Services with whom you connected via the Services. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.
 
-## 20. USER DATA
+## 21. USER DATA
 
 We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.
 
-## 21. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
+## 22. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
 
 Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Services, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SERVICES. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.
 
-## 22. MISCELLANEOUS
+## 23. MISCELLANEOUS
 
 These Legal Terms and any policies or operating rules posted by us on the Services or in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Legal Terms or use of the Services. You agree that these Legal Terms will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Legal Terms and the lack of signing by the parties hereto to execute these Legal Terms.
 
-## 23. CONTACT US
+## 24. CONTACT US
 
 In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, you may email us at [contact@mango3.app](mailto:contact@mango3.app).
