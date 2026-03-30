@@ -22,7 +22,7 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v6
-            - uses: actions/configure-pages@v5
+            - uses: actions/configure-pages@v6
             - uses: ./.github/actions/setup-node
             - name: Generate CSS file
               run: npm run build
