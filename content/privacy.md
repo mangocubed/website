@@ -2,7 +2,7 @@
 title = "Privacy Policy"
 slug = "privacy"
 date = "2026-02-23"
-updated = "2026-02-24"
+updated = "2026-03-30"
 +++
 
 This Privacy Notice for Mango³ Group ("**we**," "**us**," or "**our**"), describes how and why we might access, collect, store, use, and/or share ("**process**") your personal information when you use our services ("**Services**"), including when you:
@@ -41,19 +41,21 @@ Want to learn more about what we do with any information we collect? [Review the
 
 [3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#3-when-and-with-whom-do-we-share-your-personal-information)
 
-[4. HOW LONG DO WE KEEP YOUR INFORMATION?](#4-how-long-do-we-keep-your-information)
+[4. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?](4-what-is-our-stance-on-third-party-websites)
 
-[5. DO WE COLLECT INFORMATION FROM MINORS?](#5-do-we-collect-information-from-minors)
+[5. HOW LONG DO WE KEEP YOUR INFORMATION?](#5-how-long-do-we-keep-your-information)
 
-[6. WHAT ARE YOUR PRIVACY RIGHTS?](#6-what-are-your-privacy-rights)
+[6. DO WE COLLECT INFORMATION FROM MINORS?](#6-do-we-collect-information-from-minors)
 
-[7. CONTROLS FOR DO-NOT-TRACK FEATURES](#7-controls-for-do-not-track-features)
+[7. WHAT ARE YOUR PRIVACY RIGHTS?](#7-what-are-your-privacy-rights)
 
-[8. DO WE MAKE UPDATES TO THIS NOTICE?](#8-do-we-make-updates-to-this-notice)
+[8. CONTROLS FOR DO-NOT-TRACK FEATURES](#8-controls-for-do-not-track-features)
 
-[9. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#9-how-can-you-contact-us-about-this-notice)
+[9. DO WE MAKE UPDATES TO THIS NOTICE?](#9-do-we-make-updates-to-this-notice)
 
-[10. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#10-how-can-you-review-update-or-delete-the-data-we-collect-from-you)
+[10. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#10-how-can-you-contact-us-about-this-notice)
+
+[11. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#11-how-can-you-review-update-or-delete-the-data-we-collect-from-you)
 
 ## 1. WHAT INFORMATION DO WE COLLECT?
 
@@ -96,7 +98,13 @@ We may need to share your personal information in the following situations:
 
 - **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
 
-## 4. HOW LONG DO WE KEEP YOUR INFORMATION?
+## 4. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?
+
+**_In Short:_**  We are not responsible for the safety of any information that you share with third parties that we may link to or who advertise on our Services, but are not affiliated with, our Services._
+
+The Services may link to third-party websites, online services, or mobile applications and/or contain advertisements from third parties that are not affiliated with us and which may link to other websites, services, or applications. Accordingly, we do not make any guarantee regarding any such third parties, and we will not be liable for any loss or damage caused by the use of such third-party websites, services, or applications. The inclusion of a link towards a third-party website, service, or application does not imply an endorsement by us. We cannot guarantee the safety and privacy of data you provide to any third-party websites. Any data collected by third parties is not covered by this Privacy Notice. We are not responsible for the content or privacy and security practices and policies of any third parties, including other websites, services, or applications that may be linked to or from the Services. You should review the policies of such third parties and contact them directly to respond to your questions.
+
+## 5. HOW LONG DO WE KEEP YOUR INFORMATION?
 
 **_In Short:_** _We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law._
 
@@ -104,13 +112,13 @@ We will only keep your personal information for as long as it is necessary for t
 
 When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
 
-## 5. DO WE COLLECT INFORMATION FROM MINORS?
+## 6. DO WE COLLECT INFORMATION FROM MINORS?
 
 **_In Short:_** _We do not knowingly collect data from or market to children under 18 years of age._
 
 We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at [privacy@mango3.app](mailto:privacy@mango3.app).
 
-## 6. WHAT ARE YOUR PRIVACY RIGHTS?
+## 7. WHAT ARE YOUR PRIVACY RIGHTS?
 
 **_In Short:_**  _You may review, change, or terminate your account at any time, depending on your country, province, or state of residence._
 
@@ -129,20 +137,20 @@ Upon your request to terminate your account, we will deactivate or delete your a
 
 If you have questions or comments about your privacy rights, you may email us at [privacy@mango3.app](mailto:privacy@mango3.app).
 
-## 7. CONTROLS FOR DO-NOT-TRACK FEATURES
+## 8. CONTROLS FOR DO-NOT-TRACK FEATURES
 
 Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Notice.
 
-## 8. DO WE MAKE UPDATES TO THIS NOTICE?
+## 9. DO WE MAKE UPDATES TO THIS NOTICE?
 
 **_In Short:_** _Yes, we will update this notice as necessary to stay compliant with relevant laws._
 
 We may update this Privacy Notice from time to time. The updated version will be indicated by an updated "Revised" date at the top of this Privacy Notice. If we make material changes to this Privacy Notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information.
 
-## 9. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+## 10. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 
 If you have questions or comments about this notice, you may email us at [privacy@mango3.app](mailto:privacy@mango3.app).
 
-## 10. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
+## 11. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
 
 You have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, you may email us at [privacy@mango3.app](mailto:privacy@mango3.app).
