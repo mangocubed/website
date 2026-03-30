@@ -27,7 +27,7 @@ This Privacy Notice for Mango³ Group ("**we**," "**us**," or "**our**"), descri
 
 **In what situations and with which parties do we share personal information?** We may share information in specific situations and with specific third parties. Learn more about [when and with whom we share your personal information](#3-when-and-with-whom-do-we-share-your-personal-information).
 
-**What are your rights?** Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about [your privacy rights](#6-what-are-your-privacy-rights).
+**What are your rights?** Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Learn more about [your privacy rights](#7-what-are-your-privacy-rights).
 
 **How do you exercise your rights?** The easiest way to exercise your rights is by submitting by contacting us at [privacy@mango3.app](mailto:privacy@mango3.app). We will consider and act upon any request in accordance with applicable data protection laws.
 
@@ -122,7 +122,7 @@ We do not knowingly collect, solicit data from, or market to children under 18 y
 
 **_In Short:_**  _You may review, change, or terminate your account at any time, depending on your country, province, or state of residence._
 
-**Withdrawing your consent:** If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#9-how-can-you-contact-us-about-this-notice)" below.
+**Withdrawing your consent:** If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "[HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#10-how-can-you-contact-us-about-this-notice)" below.
 
 However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.**
 
