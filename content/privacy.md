@@ -41,7 +41,7 @@ Want to learn more about what we do with any information we collect? [Review the
 
 [3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#3-when-and-with-whom-do-we-share-your-personal-information)
 
-[4. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?](4-what-is-our-stance-on-third-party-websites)
+[4. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES?](#4-what-is-our-stance-on-third-party-websites)
 
 [5. HOW LONG DO WE KEEP YOUR INFORMATION?](#5-how-long-do-we-keep-your-information)
 
