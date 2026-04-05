@@ -2,14 +2,14 @@
 title = "Terms of Service"
 slug = "terms"
 date = "2026-02-23"
-updated = "2026-03-30"
+updated = "2026-04-05"
 +++
 
 ## AGREEMENT TO OUR LEGAL TERMS
 
 Mango³ Group ("**we**," "**us**," "**our**"), is consisted of a small group of people located on Buenos Aires, Argentina.
 
-We operate the website [mango3.app](https://mango3.app) (the "**Website**"), the mobile application Trailers (the "**App**"), as well as any other related products and services that refer or link to these legal terms (the "**Legal Terms**") (collectively, the "**Services**").
+We operate the website [mango3.app](https://mango3.app) (the "**Website**"), the mobile application Filmstrip (the "**App**"), as well as any other related products and services that refer or link to these legal terms (the "**Legal Terms**") (collectively, the "**Services**").
 
 You can contact us by email at [contact@mango3.app](mailto:contact@mango3.app).
 

@@ -2,13 +2,13 @@
 title = "Privacy Policy"
 slug = "privacy"
 date = "2026-02-23"
-updated = "2026-03-30"
+updated = "2026-04-05"
 +++
 
 This Privacy Notice for Mango³ Group ("**we**," "**us**," or "**our**"), describes how and why we might access, collect, store, use, and/or share ("**process**") your personal information when you use our services ("**Services**"), including when you:
 
 - Visit our website at [mango3.app](https://mango3.app) or any website of ours that links to this Privacy Policy.
-- Download and use our Mobile Application (Mango³ Trailers), or any other application of ours that links to this Privacy Policy.
+- Download and use our Mobile Application (Filmstrip), or any other application of ours that links to this Privacy Policy.
 - Engage with us in other related ways, including any marketing or events.
 
 **Questions or concerns?** Reading this Privacy Policy will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at [privacy@mango3.app](mailto:privacy@mango3.app).
