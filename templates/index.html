@@ -22,13 +22,54 @@
 
     <div class="card card-border">
         <div class="card-body flex-row items-center justify-between">
-            <div>
-                <h3 class="h3 card-title">Filmstrip</h3>
+            <div class="shrink">
+                <h3 class="h3 card-title">Filmstrip (Alpha)</h3>
 
                 <p class="text-lg">A great solution to get Movies and TV series recommendations.</p>
+
+                <div class="flex gap-4 mt-6 mx-6">
+                    <div class="max-w-40">
+                        <img alt="Screenshot" class="rounded-xl" src="{{ get_url(path='screenshot-0.jpg') }}" />
+                    </div>
+
+                    <div class="max-w-40">
+                        <img alt="Screenshot" class="rounded-xl" src="{{ get_url(path='screenshot-1.jpg') }}" />
+                    </div>
+
+                    <div class="max-w-40">
+                        <img alt="Screenshot" class="rounded-xl" src="{{ get_url(path='screenshot-2.jpg') }}" />
+                    </div>
+
+                    <div class="max-w-40">
+                        <img alt="Screenshot" class="rounded-xl" src="{{ get_url(path='screenshot-3.jpg') }}" />
+                    </div>
+
+                    <div class="max-w-40">
+                        <img alt="Screenshot" class="rounded-xl" src="{{ get_url(path='screenshot-4.jpg') }}" />
+                    </div>
+
+                    <div class="max-w-40">
+                        <img alt="Screenshot" class="rounded-xl" src="{{ get_url(path='screenshot-5.jpg') }}" />
+                    </div>
+                </div>
             </div>
 
-            <a class="btn btn-primary" href="https://filmstrip.mango3.app" target="_blank">TRY ALPHA</a>
+            <div class="flex flex-col gap-2 items-center shrink-0">
+                <a
+                    href="https://play.google.com/apps/testing/app.mango3.trailers"
+                    target="_blank"
+                    title="GET IT ON GOOGLE PLAY"
+                    ><img alt="GET IT ON GOOGLE PLAY" src="{{ get_url(path='google-play.svg') }}"
+                /></a>
+                <div>OR</div>
+                <a
+                    class="btn btn-outline btn-block"
+                    href="https://filmstrip.mango3.app"
+                    target="_blank"
+                    title="GO TO WEB APP"
+                    >GO TO WEB APP</a
+                >
+            </div>
         </div>
     </div>
 </section>
