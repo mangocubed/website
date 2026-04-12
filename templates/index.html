@@ -21,13 +21,19 @@
     <h2 class="h2">Our projects</h2>
 
     <div class="card card-border">
-        <div class="card-body flex-row items-center justify-between">
-            <div class="shrink">
-                <h3 class="h3 card-title">Filmstrip (Alpha)</h3>
+        <div class="card-body sm:flex-row items-center justify-between gap-4">
+            <div>
+                <div class="flex gap-4">
+                    <img alt="Logo" class="rounded-xl w-16 h-16" src="{{ get_url(path='trailers-icon.jpg') }}" />
 
-                <p class="text-lg">A great solution to get Movies and TV series recommendations.</p>
+                    <div>
+                        <h3 class="h3 card-title">Filmstrip (Alpha)</h3>
 
-                <div class="flex gap-4 mt-6 mx-6">
+                        <p class="text-lg">A great solution to get Movies and TV series recommendations.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 mt-4">
                     <div class="max-w-40">
                         <img alt="Screenshot" class="rounded-xl" src="{{ get_url(path='screenshot-0.jpg') }}" />
                     </div>
