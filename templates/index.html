@@ -1,4 +1,8 @@
-{% extends "base.html" %} {% block title %}Home | {{ super() }}{% endblock title %} {% block content %}
+{% extends "base.html" %}
+
+{% block title %} Home | {{ super() }} {% endblock title %}
+
+{% block content %}
 <section class="mt-4">
     <div class="hero bg-base-200 p-4 rounded-2xl">
         <div class="hero-content text-center">
@@ -27,9 +31,11 @@
                     <img alt="Logo" class="rounded-xl w-16 h-16" src="{{ get_url(path='trailers-icon.jpg') }}" />
 
                     <div>
-                        <h3 class="h3 card-title">Filmstrip (Alpha)</h3>
+                        <h3 class="h3 card-title" id="filmstrip">Filmstrip (Alpha)</h3>
 
-                        <p class="text-lg">A great solution to get Movies and TV series recommendations.</p>
+                        <p class="text-lg">Your ultimate solution to get Movies and TV series recommendations.
+                            With an advanced search and filter feature to help the user find a movie on series based on the available streaming service, genre and more.
+                        </p>
                     </div>
                 </div>
 
@@ -62,19 +68,21 @@
 
             <div class="flex flex-col gap-2 items-center shrink-0">
                 <a
-                    href="https://play.google.com/apps/testing/app.mango3.trailers"
+                    class="btn btn-outline btn-block"
+                    href="https://groups.google.com/u/0/g/filmstrip-app"
                     target="_blank"
-                    title="GET IT ON GOOGLE PLAY"
-                    ><img alt="GET IT ON GOOGLE PLAY" src="{{ get_url(path='google-play.svg') }}"
-                /></a>
+                    title="BECOME A TESTER"
+                >
+                    TRY ANDROID APP (CLOSED TEST)
+                </a>
                 <div>OR</div>
                 <a
                     class="btn btn-outline btn-block"
                     href="https://filmstrip.mango3.app"
                     target="_blank"
-                    title="GO TO WEB APP"
-                    >GO TO WEB APP</a
                 >
+                    GO TO WEB APP
+                </a>
             </div>
         </div>
     </div>
