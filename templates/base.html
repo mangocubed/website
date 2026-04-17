@@ -29,20 +29,41 @@
 
                 <footer class="footer">
                     <aside class="opacity-75">
-                        <p>Version: 0.0.0-alpha.11</p>
+                        <p>{{ trans(key="version", lang=lang) }}: {{ config.extra.version }} </p>
 
                         <p>© 2026 Mango³ Group</p>
                     </aside>
 
                     <nav>
-                        <a class="flex gap-2" href="https://github.com/mangocubed">
-                            <img alt="Logo" class="w-5 h-5" src="{{ get_url(path='github.svg') }}" />GitHub
+                        <a class="flex gap-2" href="https://github.com/mangocubed" target="_blank">
+                            <img alt="Logo" class="w-5 h-5" src="{{ get_url(path='github.svg') }}" />
+                            GitHub
                         </a>
                     </nav>
 
                     <nav>
-                        <a href="/terms">Terms of Service</a>
-                        <a href="/privacy">Privacy Policy</a>
+                        <a href="/terms">{{ trans(key="terms-of-service", lang=lang) }}</a>
+                        <a href="/privacy">{{ trans(key="privacy-policy", lang=lang) }}</a>
+                    </nav>
+
+                    <nav>
+                        <div class="dropdown dropdown-top">
+                            <button class="btn btn-outline btn-accent w-36 justify-between normal-case"  tabindex="0">
+                                {{ trans(key="lang-name", lang=lang) }}
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
+                                  <path fill-rule="evenodd" d="M9.47 6.47a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 1 1-1.06 1.06L10 8.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06l4.25-4.25Z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+
+                            <ul class="dropdown-content menu w-36 p-2 mb-2" tabindex="0">
+                                {% if lang == "en" %}
+                                    <li><a href="/es">{{ trans(key="lang-name", lang="es") }}</a></li>
+                                {% else %}
+                                    <li><a href="{{ current_path | regex_replace(pattern="^es/", rep="/") }}">{{ trans(key="lang-name", lang="en") }}</a></li>
+                                {% endif %}
+                            </ul>
+                        </div>
                     </nav>
                 </footer>
             </div>

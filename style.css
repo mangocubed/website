@@ -36,6 +36,10 @@
     }
 }
 
+@utility dropdown-content {
+    @apply bg-base-200 rounded-box shadow w-max z-1 border-solid border border-accent;
+}
+
 @utility footer {
     @apply md:footer-horizontal bg-base-200 p-10;
 }

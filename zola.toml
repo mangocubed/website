@@ -1,16 +1,50 @@
-# The URL the site will be built for
 base_url = "https://mango3.app"
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
-
-[markdown]
+compile_sass = false
+default_language = "en"
+minify_html = true
 
 [markdown.highlighting]
 theme = "catppuccin-mocha"
 
+[translations]
+lang-name = "English"
+
+become-a-tester = "Become a Tester"
+closed-test = "Closed test"
+go-to-web-app = "Go to web app"
+hi-there = "Hi there!"
+home = "Home"
+or = "or"
+our-projects = "Our Projects"
+privacy-policy = "Privacy Policy"
+terms-of-service = "Terms of Service"
+try-android-app = "Try Android app"
+version = "Version"
+welcome-to = "Welcome to"
+
+filmstrip-description = "The ultimate solution for getting movies and TV series recommendations. With search and filtering features that will help you find the perfect movie or series based on the streaming service and genre."
+summary = "We are a small group of people building some cool stuff"
+
+[languages.es.translations]
+lang-name = "Español"
+
+become-a-tester = "Conviértete en Tester"
+closed-test = "Prueba cerrada"
+go-to-web-app = "Ir a la web app"
+hi-there = "Hola!"
+home = "Inicio"
+or = "o"
+our-projects = "Nuestros Proyectos"
+privacy-policy = "Política de Privacidad"
+terms-of-service = "Términos de Servicio"
+try-android-app = "Probar Android app"
+version = "Versión"
+welcome-to = "Bienvenido a"
+
+filmstrip-description = "La solución definitiva para obtener recomendaciones de películas y series. Con funciones de búsqueda y filtrado que te ayudarán a encontrar la película o serie perfecta según el servicio de streaming y el género."
+summary = "Somos un pequeño grupo de personas construyendo algo genial"
+
 [extra]
-# Put all your custom variables here
+version = "0.0.0-alpha.11"

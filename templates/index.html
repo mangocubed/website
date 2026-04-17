@@ -1,28 +1,28 @@
 {% extends "base.html" %}
 
-{% block title %} Home | {{ super() }} {% endblock title %}
+{% block title %} {{ trans(key="home", lang=lang) }} | {{ super() }} {% endblock title %}
 
 {% block content %}
 <section class="mt-4">
     <div class="hero bg-base-200 p-4 rounded-2xl">
         <div class="hero-content text-center">
             <div>
-                <h1 class="h1 text-4xl">Hi there!</h1>
+                <h1 class="h1 text-4xl">{{ trans(key="hi-there", lang=lang) }}</h1>
 
                 <div class="flex flex-wrap gap-2 mb-2 items-center justify-center">
-                    <span class="text-2xl font-bold">Welcome to</span>
+                    <span class="text-2xl font-bold">{{ trans(key="welcome-to", lang=lang) }}</span>
 
                     <img alt="Mango³" class="h-6 w-auto" src="{{ get_url(path='logo.svg') }}" />
                 </div>
 
-                <p class="text-xl">We are a small group of people building some cool stuff</p>
+                <p class="text-xl">{{ trans(key="summary", lang=lang) }}</p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="mt-8">
-    <h2 class="h2">Our projects</h2>
+    <h2 class="h2">{{ trans(key="our-projects", lang=lang) }}</h2>
 
     <div class="card card-border">
         <div class="card-body sm:flex-row items-center justify-between gap-4">
@@ -33,9 +33,7 @@
                     <div>
                         <h3 class="h3 card-title" id="filmstrip">Filmstrip (Alpha)</h3>
 
-                        <p class="text-lg">Your ultimate solution to get Movies and TV series recommendations.
-                            With an advanced search and filter feature to help the user find a movie on series based on the available streaming service, genre and more.
-                        </p>
+                        <p class="text-lg">{{ trans(key="filmstrip-description", lang=lang) }}</p>
                     </div>
                 </div>
 
@@ -68,20 +66,21 @@
 
             <div class="flex flex-col gap-2 items-center shrink-0">
                 <a
-                    class="btn btn-outline btn-block"
+                    class="btn btn-outline btn-block uppercase h-auto py-2"
                     href="https://groups.google.com/u/0/g/filmstrip-app"
                     target="_blank"
-                    title="BECOME A TESTER"
+                    title="{{ trans(key='become-a-tester', lang=lang) }}"
                 >
-                    TRY ANDROID APP (CLOSED TEST)
+                    {{ trans(key='try-android-app', lang=lang) }}<br/>
+                    ({{ trans(key="closed-test", lang=lang) }})
                 </a>
-                <div>OR</div>
+                <div class="uppercase">{{ trans(key="or", lang=lang) }}</div>
                 <a
-                    class="btn btn-outline btn-block"
+                    class="btn btn-outline btn-block uppercase"
                     href="https://filmstrip.mango3.app"
                     target="_blank"
                 >
-                    GO TO WEB APP
+                    {{ trans(key='go-to-web-app', lang=lang) }}
                 </a>
             </div>
         </div>
